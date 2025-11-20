@@ -225,7 +225,8 @@ def _determine_disclosure_timeline_from_age(vulnerability_age_days: int) -> str:
 
 app = FastAPI(title="VulnRisk API", version="1.0.0")
 
-
+# Initialize CORS origins
+cors_origins = []
 
 # Add local development origins if in development environment
 if os.getenv("ENVIRONMENT") == "development":
