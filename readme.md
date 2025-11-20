@@ -1,6 +1,7 @@
 # 🛡️ VulnRisk - Open Source Vulnerability Risk Assessment Platform
 
-[![Open Source](https://img.shields.io/badge/Open%20Source-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: Commercial](https://img.shields.io/badge/License-Commercial-blue.svg)](https://www.animogovcon.com)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 
 > **Stop chasing CVSS scores. Start managing real risk.**
@@ -11,7 +12,7 @@ VulnRisk is an open-source vulnerability risk assessment platform that provides 
 
 ```bash
 # Clone the repository
-git clone https://github.com/GurkhaShieldForce/vulnrisk-public.git
+git clone https://github.com/GurkhaShieldForce/vulnrisk_public.git vulnrisk
 cd vulnrisk
 
 # Run the setup script
@@ -19,10 +20,10 @@ cd vulnrisk
 ```
 
 **What You Get:**
-- ✅ **Frontend**: http://localhost:3000
+- ✅ **Frontend**: http://localhost:3000  
 - ✅ **Backend API**: http://localhost:8000  
-- ✅ **API Docs**: http://localhost:8000/docs
-- ✅ **Database**: PostgreSQL on localhost:5432
+- ✅ **API Docs**: http://localhost:8000/docs  
+- ✅ **Database**: PostgreSQL on localhost:5432  
 
 ## 🎯 **Why VulnRisk?**
 
@@ -45,34 +46,34 @@ cd vulnrisk
 
 ## 🔒 **Security Features**
 
-- **Input Validation**: SQL injection, XSS protection
-- **Security Headers**: CSP, HSTS, X-Frame-Options
-- **Rate Limiting**: Request throttling
-- **Audit Logging**: Comprehensive activity tracking
+- **Input Validation**: SQL injection, XSS protection  
+- **Security Headers**: CSP, HSTS, X-Frame-Options  
+- **Rate Limiting**: Request throttling  
+- **Audit Logging**: Comprehensive activity tracking  
 
 ## 📊 **Key Features**
 
 ### **Core Risk Assessment**
-- ✅ Vulnerability scanning and analysis
-- ✅ Risk scoring with AI/ML models
+- ✅ Vulnerability scanning and analysis  
+- ✅ Risk scoring with AI/ML models  
 - ✅ Exportable reports (PDF/Excel)
 
 ### **AI/ML Analytics**
-- ✅ Risk prediction models
-- ✅ Anomaly detection
-- ✅ Trend analysis
-- ✅ Intelligent recommendations
+- ✅ Risk prediction models  
+- ✅ Anomaly detection  
+- ✅ Trend analysis  
+- ✅ Intelligent recommendations  
 
 ## 🛠️ **Development Setup**
 
 ### **Prerequisites**
-- Docker & Docker Compose
-- Git
+- Docker & Docker Compose  
+- Git  
 
 ### **Local Development**
 ```bash
 # Clone and setup
-git clone https://github.com/GurkhaShieldForce/vulnrisk-public.git
+git clone https://github.com/GurkhaShieldForce/vulnrisk_public.git vulnrisk
 cd vulnrisk
 ./setup.sh
 
@@ -85,12 +86,16 @@ docker compose down -v         # Reset everything
 
 ## 🤝 **Contributing**
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome community contributions!  
+Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+> **Note:** Contributions made to this public repository apply only to the **open-source (MIT)** version.  
+> Our **commercial edition** is maintained separately in a private repository and does not include community code.
 
 ### **Quick Start for Contributors**
 ```bash
 # Fork the repository
-git clone https://github.com/GurkhaShieldForce/vulnrisk-public.git
+git clone https://github.com/GurkhaShieldForce/vulnrisk_public.git vulnrisk
 cd vulnrisk
 
 # Set up development environment
@@ -106,19 +111,25 @@ git push origin feature/amazing-feature
 
 ## 📚 **Documentation**
 
-- **[Developer Setup](DEVELOPER_SETUP.md)** - Detailed setup guide
-- **[API Documentation](http://localhost:8000/docs)** - Interactive API docs
+- **[Developer Setup](DEVELOPER_SETUP.md)** - Detailed setup guide  
+- **[API Documentation](http://localhost:8000/docs)** - Interactive API docs  
 
 ## 🆘 **Support**
 
-- **GitHub Issues**: [Report bugs and request features](https://github.com/GurkhaShieldForce/vulnrisk-public/issues)
+- **GitHub Issues**: [Report bugs and request features](https://github.com/GurkhaShieldForce/vulnrisk_public/issues)
 
 ## 📄 **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+VulnRisk is **dual-licensed** under:
+
+- **🟢 MIT License** – For open-source, personal, and research use.  
+- **💼 Commercial License** – Required for enterprise, SaaS, or for-profit use.  
+
+See the [LICENSE](LICENSE) file for full terms.  
+For commercial licensing or enterprise inquiries, visit **[www.animogovcon.com](https://www.animogovcon.com)**.
 
 ## 🎉 **Getting Started**
 
-**Ready to start?** Run `./setup.sh` and you'll have a fully functional VulnRisk environment in 5 minutes!
+**Ready to start?** Run `./setup.sh` and you'll have a fully functional VulnRisk environment in 5 minutes!  
 
 **Need help?** Check our [Developer Setup Guide](DEVELOPER_SETUP.md) for detailed instructions.
