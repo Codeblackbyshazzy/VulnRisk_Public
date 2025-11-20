@@ -98,6 +98,7 @@ const AboutPage: React.FC = () => {
             <div className="animate-slide-up delay-100">
               <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-900/10 rounded-2xl p-8">
                 <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
                     <div className="bg-white rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Target className="h-8 w-8 text-primary-600" />
                     </div>
