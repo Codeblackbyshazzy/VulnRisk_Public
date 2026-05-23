@@ -167,6 +167,22 @@ curl http://localhost:8000/api/v1/config/features
 ### **Common Issues**
 
 #### **Port Already in Use**
+
+`./setup.sh` automatically selects the next available port when defaults (8000, 3000, 5432) are taken and saves the choice in `.env`.
+
+To set ports manually, copy `.env.example` to `.env` and edit:
+
+```bash
+BACKEND_HOST_PORT=8001
+FRONTEND_HOST_PORT=3001
+DB_HOST_PORT=5433
+VITE_API_BASE_URL=http://localhost:8001
+```
+
+Then run `./setup.sh` or `docker compose up -d`.
+
+To free a port manually:
+
 ```bash
 # Kill existing processes
 lsof -ti:8000 | xargs kill -9
