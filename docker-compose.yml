@@ -2,7 +2,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "8000:8000"
+      - "${BACKEND_HOST_PORT:-8000}:8000"
     environment:
       - PYTHONPATH=/app
       - ENVIRONMENT=development
@@ -15,9 +15,9 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "${FRONTEND_HOST_PORT:-3000}:3000"
     environment:
-      - VITE_API_BASE_URL=http://localhost:8000
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost:8000}
     volumes:
       - ./frontend:/app
       - /app/node_modules
@@ -31,7 +31,7 @@ services:
       - POSTGRES_USER=vulnrisk
       - POSTGRES_PASSWORD=password
     ports:
-      - "5432:5432"
+      - "${DB_HOST_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 

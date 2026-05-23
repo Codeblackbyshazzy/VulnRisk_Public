@@ -19,11 +19,13 @@ cd vulnrisk
 ./setup.sh
 ```
 
-**What You Get:**
+**What You Get** (default ports; configurable via `.env`):
 - ✅ **Frontend**: http://localhost:3000  
 - ✅ **Backend API**: http://localhost:8000  
 - ✅ **API Docs**: http://localhost:8000/docs  
 - ✅ **Database**: PostgreSQL on localhost:5432  
+
+If a default port is already in use, `./setup.sh` picks the next free port and writes it to `.env`. Copy `.env.example` to customize ports before setup.
 
 ## 🎯 **Why VulnRisk?**
 
