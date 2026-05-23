@@ -70,6 +70,8 @@ cd vulnrisk
 - Docker & Docker Compose  
 - Git  
 
+For running the backend outside Docker, install [uv](https://docs.astral.sh/uv/) and Python 3.13+, then `cd backend && uv sync --all-groups && make dev`.
+
 ### **Local Development**
 ```bash
 # Clone and setup

@@ -4,7 +4,7 @@
 
 ### **Prerequisites**
 - Docker & Docker Compose
-- Python 3.13+ (for local development)
+- Python 3.13+ and [uv](https://docs.astral.sh/uv/) (for local backend development)
 - Git
 
 ### **1. Clone & Setup**
@@ -85,12 +85,17 @@ If you prefer manual setup:
 ### **1. Backend Setup**
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-poetry install
+uv sync --all-groups
 cp .env.example .env
 # Edit .env with your settings
-uvicorn src.vulnrisk.api.main:app --reload --host 0.0.0.0 --port 8000
+make dev
+# Or: uv run uvicorn src.vulnrisk.api.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Optional extras:
+```bash
+uv sync --extra aws    # Lambda / DynamoDB (boto3)
+uv sync --extra nlp    # spaCy / transformers NLP features
 ```
 
 ### **2. Frontend Setup**
