@@ -13,7 +13,7 @@ command -v docker >/dev/null 2>&1 || { echo "❌ Docker is required but not inst
 command -v docker compose >/dev/null 2>&1 || { echo "❌ Docker Compose is required but not installed. Please install Docker Compose first."; exit 1; }
 
 # Make sure we're in the right directory
-if [ ! -f "backend/requirements.txt" ]; then
+if [ ! -f "backend/pyproject.toml" ] || [ ! -f "backend/uv.lock" ]; then
     echo "❌ Please run this script from the VulnRisk root directory"
     exit 1
 fi

@@ -6,7 +6,7 @@ Thank you for your interest in contributing to VulnRisk! This document provides 
 
 ### **Prerequisites**
 - Docker & Docker Compose
-- Python 3.9+
+- Python 3.13+ and [uv](https://docs.astral.sh/uv/) (optional, for backend-only local work)
 - Git
 - Basic understanding of vulnerability management
 
@@ -16,11 +16,18 @@ Thank you for your interest in contributing to VulnRisk! This document provides 
 git clone https://github.com/GurkhaShieldForce/vulnrisk-public.git
 cd vulnrisk-public
 
-# Set up development environment
+# Set up development environment (Docker)
 ./setup.sh
 
 # Verify setup
 curl http://localhost:8000/health
+```
+
+### **Backend-only local setup (optional)**
+```bash
+cd backend
+uv sync --all-groups
+make dev
 ```
 
 ## 🎯 **How to Contribute**
